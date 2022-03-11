@@ -15,7 +15,7 @@ pipeline {
 		stage('Deploy') {
             steps {
                 echo 'Deploy Starts!'
-                bat "\"C:/Program Files/dotnet/dotnet.exe\" publish \"${workspace}/JenkinsFirstApp\" --output \"C:/inetpub/wwwroot\""
+                bat "\"C:/Program Files/dotnet/dotnet.exe\" publish \"${workspace}/JenkinsFirstApp\" --output \"C:/inetpub/wwwroot\jenkins""
                 echo 'Deploy Ends'
             }
         }		
