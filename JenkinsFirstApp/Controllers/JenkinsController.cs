@@ -14,7 +14,7 @@ namespace JenkinsFirstApp.Controllers
 
         public IActionResult Get()
         {
-            return Ok(new { message = "Up" });
+            return Ok(new { message = "Up"+DateTime.Now.ToShortDateString() });
         
         }
     }
